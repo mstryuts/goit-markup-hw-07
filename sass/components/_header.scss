@@ -1,6 +1,7 @@
-.header-wrapper {
-    align-items: center;
+.header-container{
     display: flex;
+    width: 100%;
+
 }
 
 .header {
@@ -8,15 +9,16 @@
 }
 
 .logo-header{
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     
 }
-
+.navigation{
+    display:none;
+}
 
 .nav {
-    display: flex;
+    // display: flex;
     list-style: none;
 
     &__item:not(:first-child) {
@@ -62,8 +64,7 @@
 
 
 .auth{
-    display: flex;
-    list-style: none;
+    display: none;
     margin-left: auto;
 
     &__item:not(:first-child) {
@@ -94,3 +95,4 @@
             margin-right: 10px;
 }
 }
+
