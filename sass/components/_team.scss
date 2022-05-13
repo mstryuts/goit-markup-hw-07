@@ -17,7 +17,7 @@
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         &:not(:last-child) {
-            margin-right: 30px;
+            margin-bottom: 30px;
                     }
     }
     &__title{
@@ -35,4 +35,12 @@
             text-align: center;
             margin-bottom: 16px;
     }
+}
+.text-wrapper{
+    padding-bottom: 30px;
+        padding-top: 30px;
+    
+}
+.section-team{
+    padding-bottom: 60px;
 }

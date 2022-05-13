@@ -106,15 +106,9 @@ a {
 .loyals {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-}
-.loyals__item:not(:last-child) {
-  margin-right: 30px;
 }
 .loyals__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
@@ -332,11 +326,14 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .header-container {
   display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -415,6 +412,25 @@ body {
 .auth__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.menu-button {
+  background-color: transparent;
+  display: inline-flex;
+  padding: 0;
+  border: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+.is-open .icon-close {
+  display: block;
+}
+
+.is-open .icon-menu {
+  display: none;
 }
 
 .hero {
@@ -546,7 +562,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .crew__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .crew__title {
   color: #212121;
@@ -562,6 +578,15 @@ body {
   line-height: 1.18;
   text-align: center;
   margin-bottom: 16px;
+}
+
+.text-wrapper {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.section-team {
+  padding-bottom: 60px;
 }
 
 .cards {
@@ -681,7 +706,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 }
 .socials__item {
   width: 44px;
