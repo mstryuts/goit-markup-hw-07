@@ -1,11 +1,15 @@
 .hero {
     background-color: $hero-bgc;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heropic.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heropic2x.jpg");
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 480px;
 
     &__title {
             color: $white-color;

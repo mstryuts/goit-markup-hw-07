@@ -298,19 +298,20 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
+@media (min-width: 480px) {
   .container {
     width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 760px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -334,7 +335,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .header {
@@ -357,7 +357,6 @@ body {
   margin-left: 50px;
 }
 .nav__link {
-  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -386,7 +385,6 @@ body {
 }
 
 .auth {
-  display: none;
   margin-left: auto;
 }
 .auth__item:not(:first-child) {
@@ -418,6 +416,7 @@ body {
   background-color: transparent;
   display: inline-flex;
   padding: 0;
+  z-index: 900;
   border: none;
 }
 
@@ -433,14 +432,30 @@ body {
   display: none;
 }
 
+.menu {
+  display: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+.menu.is-open {
+  display: block;
+}
+
 .hero {
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heropic.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heropic2x.jpg");
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 480px;
 }
 .hero__title {
   color: #FFFFFF;
@@ -519,7 +534,7 @@ body {
   padding-left: 0;
 }
 .peculiarities__wrapper {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;

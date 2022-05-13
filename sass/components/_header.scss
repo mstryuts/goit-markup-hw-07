@@ -3,7 +3,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-    width: 100%;
 
 }
 
@@ -29,8 +28,7 @@
         }
     
     &__link {
-        display: block;
-        
+        // display: block;
             font-weight: 500;
             line-height: 1.14;
             letter-spacing: 0.02em;
@@ -67,7 +65,7 @@
 
 
 .auth{
-    display: none;
+    // display: none;
     margin-left: auto;
 
     &__item:not(:first-child) {
@@ -103,7 +101,7 @@
     background-color: transparent;
     display: inline-flex;
     padding: 0;
-   
+    z-index: 900;
     border: none;
 
 }
@@ -113,9 +111,20 @@
 .is-open .icon-close{
 display: block;
 }
-.icon-menu{
 
-}
 .is-open .icon-menu {
     display: none;
+}
+
+.menu{
+    display: none;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: $white-color;
+    position: absolute;
+    &.is-open{
+        display:block;
+    }
+   
 }

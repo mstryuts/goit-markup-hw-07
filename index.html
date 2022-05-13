@@ -40,37 +40,45 @@
             ></use>
           </svg>
         </button>
-        <nav class="navigation">
-          <ul class="nav">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link current">Студия</a>
+        <div class="menu is-open" data-menu>
+          <nav class="navigation">
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link current">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="portfolio.html" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="auth">
+            <li class="auth__item">
+              <a href="mailto:info@devstudio.com" class="auth__link">
+                <svg class="auth__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="portfolio.html" class="nav__link">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
+            <li class="auth__item">
+              <a href="tel:+380961111111" class="auth__link">
+                <svg class="auth__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="auth">
-          <li class="auth__item">
-            <a href="mailto:info@devstudio.com" class="auth__link">
-              <svg class="auth__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="auth__item">
-            <a href="tel:+380961111111" class="auth__link">
-              <svg class="auth__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="menu-social">
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>facebook</li>
+            <li>linkedin</li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -188,7 +196,7 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="crew">
             <li class="crew__item">
-              <img src="./images/t1.jpg" width="270" alt="фото игорь" />
+              <img src="./images/t1.jpg" width="450" alt="фото игорь" />
               <div class="text-wrapper">
                 <h3 class="crew__title">Игорь Демьяненко</h3>
                 <p class="crew__position">Product Designer</p>
